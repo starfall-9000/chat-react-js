@@ -14,3 +14,4 @@
 ### Todo:
 
 * make chat-app for react-native
+* deploy chat-app
