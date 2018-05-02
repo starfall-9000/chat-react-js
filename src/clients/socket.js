@@ -2,8 +2,9 @@ import * as types from '../constants/ActionTypes'
 import { addUser, messageReceived, populateUsersList } from '../actions'
 
 const setupSocket = (dispatch, username) => {
-  const port = process.env.PORT || 8989
-  const socket = new WebSocket('ws://localhost:' + port)
+  // const port = process.env.PORT || 8989
+  // const socket = new WebSocket('ws://localhost:' + port)
+  const socket = new WebSocket('ws://still-beach-82653.herokuapp.com')
 
   socket.onopen = () => {
     socket.send(
