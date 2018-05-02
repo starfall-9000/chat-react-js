@@ -1,6 +1,9 @@
 const WebSocket = require('ws')
 
-const wss = new WebSocket.Server({ port: 8989 })
+const PORT = process.env.PORT || 8989
+const wss = new WebSocket.Server({ port: PORT })
+
+console.log(`Listening on ${PORT}`)
 
 const users = []
 
